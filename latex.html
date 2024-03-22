@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Useful LaTeX Macros</title>
+<meta name="author" content="Jeff Erickson">
+<meta name="reply-to" content="jeffe@cs.uiuc.edu">
+<link rev="made" href="mailto:jeffe@cs.uiuc.edu">
+</head>
+
+<body bgcolor="ffffff">
+
+<h1>Useful <a href="http://www.latex-project.org/">L<small><sup>A</sup></small>T<font size=1><sub><font size=6>E</font></sub></font>X</a> Macros</h1>
+
+<ul>
+<li> <b><a href="tex/jeffe.sty">jeffe.sty</a>:</b>
+	Macros I use in every <a href="http://www.latex-project.org/">LaTeX</a> document.
+	<ul>
+	<li> Automatic inclusion of various AMS math packages.
+	<li> Accented names and English words:
+		\cafe \naive \vitae \Bezier \Erdos \Mobius \Plucker \Turan
+	<li> Math symbols and operators:
+		\Real \Integer \Complex \aff \argmax \conv \polylog \sgn
+	<li> Text style delimiter pairs:
+		\ceil \floor \set \seq \abs
+	<li> Display style delimiter pairs:
+		\Ceil \Floor \Set \Seq \Abs
+	<li> "Improved" theorems and captions
+	<li> \newproof: make unnumbered theorem-like enviroments
+	<li> Standard proof environment \begin{proof}[source] ... \end{proof} with
+		halmos at end
+	<li> Algorithm environments
+	<li> \bibalias{foo}{bar} makes \cite{foo} act like \cite{bar}.
+		Useful with large bibliographies like geombib.
+	<li> Lots of other
+	T<font size=1><sub><font size=3>E</font></sub></font>X h<font size=1><sub><font size=3>a</font></sub></font>x.
+	</ul>
+
+<p>
+<li> <b><a href="tex/jeffeproc.sty">jeffeproc.sty</a>:</b>
+	Package for two-column proceedings papers.  Unlike similar
+	packages from ACM and SIAM, this one actually works!  Margins
+	set according to ACM/IEEE/SIAM guidelines; other space
+	parameters smaller than standard latex.  Optional 1 inch space
+	below first column for publisher-supplied copyright notice.
+	Options for ACM- or SIAM-style section headers.  Options to
+	set bibliography in smaller type.
+
+<p>
+<li><b><a href="tex/fixacm.sty">fixacm.sty</a>:</b>
+
+	Fixes most (but not all) of the stupidity in ACM's
+	embarassingly ugly and brain-damaged
+	<a href="http://www.acm.org/sigs/pubs/proceed/template.html">
+	proceedings document class</a>.  Required now that ACM's
+	<a href="http://www.secinfo.com/$/SEC/Registrant.asp?CIK=89744">
+	printing subcontractor</a> has been coerced into acting as
+	an enforcer.  <img src="pix/new.gif">
+	Sheridan published at least <a href="splitting.html">one paper
+	using fixacm (with the [obey] option)</a> in 2006.  Apparently, only
+	the title and author formatting really really matters.
+
+	<ul>
+	<li> Removes any limitation on the number of authors that can
+        appear on the title page.  (ACM imposes a hard-wired limit
+        of three authors.  No, really.)
+	<li> Removes all hardwired Times and Helvetica fonts, except
+		in the required <a href="copyright.html">copyright
+		statement</a> and <img src="pix/new.gif">
+		optionally in the title, authors, and affiliations.
+		(Some HaXing is still required to make that look good,
+		but that should be fixed Real Soon Now).
+	<li> Makes footnotes smaller than normal text (but not smaller
+		than small text) 
+	<li> Restores default bibliography style, with options to use
+		smaller type 
+	<li> Makes large/Large/LARGE/huge/Huge text smaller to
+		accomodate 9pt body text 
+	<li> Typesets email addresses in normal text
+	<li> Restore default definitions of \thesubsubection and
+	   \theparagraph so \ref{foo} doesn't change fonts
+	</ul>
+
+	I recommend using <a href="tex/jeffe.sty">jeffe.sty</a> to
+	redefine ACM's ugly captions, theorems, and proofs.
+	Imminentize the eschaton at your own risk!
+
+<p>
+<li> <b><a href="tex/myconcrete.sty">myconcrete.sty</a>:</b>
+	Use the Concrete Math text fonts.  Especially useful with
+	<a href="tex/euler.sty">euler.sty</a>, which sets up the AMS
+	Euler math fonts.  Unfortunately, this style only works with
+	the type-3 concrete fonts available with most standard TeX
+    distributions, so you can't use it with pdflatex.  (Type-1
+    versions of these fonts are available as part of the
+    <a href="http://www.ctan.org/tex-archive/fonts/ps-type1/cm-super/">
+    CM-Super font package</a>, but this package is not
+    compatible with them.)
+<p> 
+<li> <b><a href="tex/handout.sty">handout.sty</a>:</b>
+	Useful stuff for class handouts, homeworks, exams, etc.
+<p>
+<li> <b><a href="tex/scribe.sty">scribe.sty</a>:</b>
+	Package for scribe notes, loosely based on the MIT/Berkeley
+	scribe note style but rewritten from scratch.  Here are <a
+	href="tex/scribe42.dvi.gz">some sample scribe notes</a> (and
+	<a href="tex/scribe42.tex">their latex source</a>), which
+	reveal the secret origin of the typesetter's chant: <i>Lorem
+	isum dolor sit amet...</i>
+<p>
+<li> <b><a href="tex/abuser.bst">abuser.bst</a>:</b>
+	BibTeX style mostly stolen from David Eppstein.  Supports the
+	url field, with angle brackets as per AMA guidelines.  Works
+	around geom.bib's confusion about volume and number for
+	proceedings papers.  Requires <a href="tex/url.sty">url.sty</a>.
+</ul>
+
+<!--------------------------------------------------------------------------------------->
+<hr>
+<address>
+	<img src="pix/jge.gif" align=left>
+	<a href="pubs.html">Publications</a> -
+	<a href="../index.html">Jeff Erickson</a>
+	(<a href="mailto:jeffe@cs.uiuc.edu;?subject=macros">jeffe@cs.uiuc.edu</a>)
+	<small>05 Jun 2006</small>
+</address>
+</body>
+</html>

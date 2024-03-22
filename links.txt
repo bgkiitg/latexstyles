@@ -1,0 +1,8 @@
+https://jeffe.cs.illinois.edu/pubs/tex/euler.sty
+https://jeffe.cs.illinois.edu/pubs/tex/fixacm.sty
+https://jeffe.cs.illinois.edu/pubs/tex/handout.sty
+https://jeffe.cs.illinois.edu/pubs/tex/jeffeproc.sty
+https://jeffe.cs.illinois.edu/pubs/tex/jeffe.sty
+https://jeffe.cs.illinois.edu/pubs/tex/myconcrete.sty
+https://jeffe.cs.illinois.edu/pubs/tex/scribe.sty
+https://jeffe.cs.illinois.edu/pubs/tex/url.sty
